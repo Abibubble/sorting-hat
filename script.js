@@ -1,6 +1,32 @@
+// ----------------------------------------------------------------------------------------------- Global variables
 let house;
 
+// ----------------------------------------------------------------------------------------------- Navigation
+
+function navigate(house) {
+    switch (house) {
+        case "Gryffindor":
+            // Navigate to Gryf screen
+            break;
+        case "Hufflepuff":
+            // Navigate to Huff screen
+            break;
+        case "Ravenclaw":
+            // Navigate to Rave screen
+            break;
+        case "Slytherin":
+            // Navigate to Slyt screen
+            break;
+        default:
+            alert("Hmm... I can't make up my mind... Let's try that again!");
+            break;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------- Sorting hat sort function
+
 function sortHouse() {
+    house = "";
     let randomNumber = Math.floor(Math.random() * 4); // Gets a random number between 1 and 4
     switch (randomNumber) {
         case "1":
@@ -19,25 +45,5 @@ function sortHouse() {
             alert("Hmm... I can't make up my mind... Let's try that again!")
             break;
     }
-    switch (house) {
-        case "Gryffindor":
-            // Show Gryffindor
-            break;
-        case "Hufflepuff":
-            // Show Hufflepuff
-            break;
-        case "Ravenclaw":
-            // Show Ravenclaw
-            break;
-        case "Slytherin":
-            // Show Slytherin
-            break;
-        default:
-            alert("Hmm... I can't make up my mind... Let's try that again!")
-            break;
-    }
+    navigate();
 }
-
-// On click, sorting hat disappears, revealing houses. cycle around houses, greying out each one in order
-// Alight on a house at random, pause, then display house name, crest, and info about house
-// Restart button clears the house and goes back to the sorting hat.
