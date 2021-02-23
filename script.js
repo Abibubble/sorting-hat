@@ -11,16 +11,20 @@ let slytherinPage = document.getElementById("js-slytherin");
 function navigate(house) {
     switch (house) {
         case "Gryffindor":
-            // Navigate to Gryf screen
+            sortPage.classList.add("hide");
+            gryffindorPage.classList.remove("hide");
             break;
         case "Hufflepuff":
-            // Navigate to Huff screen
+            sortPage.classList.add("hide");
+            hufflepuffPage.classList.remove("hide");
             break;
         case "Ravenclaw":
-            // Navigate to Rave screen
+            sortPage.classList.add("hide");
+            ravenclawPage.classList.remove("hide");
             break;
         case "Slytherin":
-            // Navigate to Slyt screen
+            sortPage.classList.add("hide");
+            slytherinPage.classList.remove("hide");
             break;
         default:
             alert("Hmm... I can't make up my mind... Let's try that again!");
