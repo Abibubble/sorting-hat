@@ -1,5 +1,10 @@
 // ----------------------------------------------------------------------------------------------- Global variables
 let house;
+let sortPage = document.getElementById("js-sort-page");
+let gryffindorPage = document.getElementById("js-gryffindor");
+let hufflepuffPage = document.getElementById("js-hufflepuff");
+let ravenclawPage = document.getElementById("js-ravenclaw");
+let slytherinPage = document.getElementById("js-slytherin");
 
 // ----------------------------------------------------------------------------------------------- Navigation
 
