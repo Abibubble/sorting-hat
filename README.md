@@ -290,7 +290,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * WHO OWNS THE CONTENT OF THE SITE
 
 ### Media
-* WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
+* https://www.pinterest.co.uk/pin/716142778224412690/ for sorting hat image by Fábio Baganha.
 
 ### Acknowledgements
 * My mentor, Antonio Rodriguez, at [Code Institute](https://codeinstitute.net/), for continuous helpful feedback and support.
