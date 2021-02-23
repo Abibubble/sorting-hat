@@ -1,5 +1,5 @@
 body {
-        font-family: sans-serif;
+    font-family: sans-serif;
     color: lightgray;
     margin: 0;
     width: 100%;
@@ -12,7 +12,7 @@ body {
 .background-image {
     width: 100%;
     height: auto;
-    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed; /* Background image, hosted on Imgur to save load times */
+    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +27,9 @@ body {
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 60%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
 }
 
 .choose-house, .question-text {
