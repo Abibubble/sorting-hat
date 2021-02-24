@@ -23,16 +23,16 @@ body {
 
 #logo {
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 40%;
-    margin-left: 30%;
+    width: 34%;
+    margin-left: 33%;
     text-align: center;
 }
 
-#sorting-hat, .crest {
+#sorting-hat {
     width: 30%;
     margin-left: 35%;
 }
@@ -47,6 +47,11 @@ body {
     width: 70%;
     margin-left: 15%;
     text-align: center;
+}
+
+.crest {
+    width: 20%;
+    margin-left: 40%;
 }
 
 footer {
