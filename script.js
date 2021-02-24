@@ -12,19 +12,19 @@ function sortHouse() {
     let randomNumber = Math.floor(Math.random() * 4); // Gets a random number between 1 and 4
     console.log(randomNumber);
     switch (randomNumber) {
-        case "1":
+        case 1:
             sortPage.classList.add("hide");
             gryffindorPage.classList.remove("hide");
             break;
-        case "2":
+        case 2:
             sortPage.classList.add("hide");
             hufflepuffPage.classList.remove("hide");
             break;
-        case "3":
+        case 3:
             sortPage.classList.add("hide");
             ravenclawPage.classList.remove("hide");
             break;
-        case "4":
+        case 4:
             sortPage.classList.add("hide");
             slytherinPage.classList.remove("hide");
             break;
