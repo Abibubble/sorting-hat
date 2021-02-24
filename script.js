@@ -9,7 +9,7 @@ let slytherinPage = document.getElementById("js-slytherin");
 // ----------------------------------------------------------------------------------------------- Sorting hat sort function
 
 function sortHouse() {
-    let randomNumber = Math.floor(Math.random() * 4); // Gets a random number between 1 and 4
+    let randomNumber = Math.floor(Math.random() * 3) + 1; // Gets a random number between 1 and 4
     console.log(randomNumber);
     switch (randomNumber) {
         case 1:
