@@ -74,38 +74,24 @@ The main features that I wanted to include are:
 
 ### User Stories
 #### Client Goals
-* The quiz needs to be easily accessible, with instructions and audio settings available throughout.
-* The quiz needs to be personalised to each user.
-* It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
-* It needs to be instantly engaging to enourage the user to play the game.
-* Questions needs to be randomised and drawn from a large bank of available questions.
-* It must be easy to see how much time the user has left to complete the quiz.
+* It needs to be instantly engaging.
+* A random house needs to appear every time.
 * Manouvering around the site needs to be straightforward.
-* The user must be able to give up on the quiz if they wish to, and return to the homepage.
+* The user must be able to return to the homepage from the house page.
 
 #### First Time Visitor Goals
 * I want it to be easy to understand what to do.
 * I want to be able to easily navigate throughout the site.
-* I want to be able to turn the audio on or off at any point in the quiz.
 
 #### Returning Visitor Goals
-* I want to have different questions depending on which house I choose, increasing replayability.
-
-#### Frequent Visitor Goals
-* I want to be able to play the quiz again with new questions.
+* To be able to get a random house every time
 
 ---
 ## Design
 ### Color Scheme
 * Basic color scheme uses rgb(218,165,32) for the gold (also known as goldenrod) and #07080c for the off-black.
-* Gryffindor house uses #d74f40 as the primary color, with #fbb928 as the secondary.
-* Hufflepuff house uses #fbb92f as the primary color, with #07080c as the secondary.
-* Ravenclaw house uses #203268 as the primary color, with #886031 as the secondary.
-* Slytherin house uses #005d4a as the primary color, with #a7acaf as the secondary.
 
-![Colors used](assets/images/docs/colors.png)
-
-All of these colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
+These colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
 * For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something. It's also very similar to a typewriter font, which matches the theme of novels quite nicely.
@@ -221,59 +207,16 @@ The only errors found were due to 'let', 'const' and template literals only bein
 
 ### Testing User Stories
 #### Client Goals
-##### The quiz needs to be easily accessible, with instructions and music settings available.
-* On every page, there is a link to Instructions, and a button to toggle the music on or off.
-* From every page, you can return to the Home page via a button. This cancels the current quiz and allows the user to restart.
-* Basic instructions are available on every page, with more information on the Instructions page.
+##### It needs to be instantly engaging.
+* The Home page is bright and interesting, with bright colors to draw their eye in, and encourage them to find their house.
+* The background image is of Gloucester Cathedral cloisters, which is where the Harry Potter movies were filmed, adding to the immersion.
 
-![Image of the instructions page](assets/images/docs/testing/instructionspage.png)
-
-##### The quiz needs to be personalised to each user.
-* On the Home page, the user selects their house.
-* This updates the color scheme for the entire quiz, changing the answers boxes to their house colors.
-* It also gives them a pool of questions related to their chosen house.
-* If the user answers 0 - 2 questions correctly, they get the galleons results page.
-* If the user answers 3 - 5 questions correctly, they get the remembrall results page.
-* If the user answers 6 - 8 questions correctly, they get the letters results page.
-* If the user answers 9 - 10 questions correctly, they get the ticket results page.
-
-![Image of a quiz personalised to the house chosen](assets/images/docs/testing/homepage.png)
-
-##### It needs to be easy to see how many questions there are, and how many correct answers have been made throughout the quiz.
-* Underneath the answers boxes, there is a tally showing x / 10, with x being their current score. This is updated after each question.
-* There is also a progress bar underneath, that shows how far through the quiz they are.
-
-![Image of progress bar and score tally](assets/images/docs/testing/progress.png)
-
-##### It needs to be easy to see how much time is left to complete the questions.
-* Underneath the answers boxes, there is a clear timer that counts down from 180 seconds.
-
-![Image of the timer underneath the answers](assets/images/docs/testing/timer.png)
-
-##### It needs to be instantly engaging to enourage the user to play the game.
-* The user is immediately greeted with a well-known quote from the Harry Potter books, which then prompts them to click to enter, causing them to interact with the quiz before the quiz even starts.
-* The Home page is bright and interesting, with bright colors to draw their eye in, and encourage them to play the quiz.
-* The navigation buttons are bright and right at the top, drawing thier eye to the 'Audio on' button. Upon clicking this, the audio adds more immersion to the website.
-* Each of the house buttons are bright, and colored using the house colors, which are eye-catching.
-* Most people who know Harry Potter have a house that they consider 'their house'. The choosing house function allows them to feel like they're part of the quiz.
-
-![Image of the home page](assets/images/docs/testing/homepage.png)
-
-##### Questions needs to be randomised and drawn from a large bank of available questions.
-* There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
-* The question set is fully randomised, without allowing questions to be repeated.
-
-![Image of the quiz page showing an example of a question](assets/images/docs/testing/quizpage.png)
-
-##### It must be easy to see how much time the user has left to complete the quiz.
-* Underneath the answer boxes is a timer. It's positioned next to the progress bar and the score counter, which makes it very easy to spot.
-
-![Image of the timer](assets/images/docs/testing/timer.png)
+##### A random house needs to appear every time.
+* Every house page is available at random, due to a random number generator that generates a number between 1 and 4.
 
 ##### Manouvering around the site needs to be straightforward.
-* On every page, there is a button to take the user to Home, Instructions, and to toggle the audio.
-* On the Home page, there are simple instructions for the user to choose their house, with brightly colored buttons to match the house colors.
-* Within the quiz, the question and answers are bright and eye-catching, making it obvious what to do.
+* There are only two clickable areas - the sorting hat, and the back button.
+* Both buttons are clear to understand and visible.
 
 ##### The user must be able to return to the homepage from the house page.
 * On every house page, there is a button to take the user to the home page.
@@ -288,8 +231,8 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * All navigation buttons are easy to see and easy to understand what they do.
 
 #### Returning Visitor Goals
-##### 
-* 
+##### To be able to get a random house every time
+* Every house page is available at random, due to a random number generator that generates a number between 1 and 4.
 
 ### Full Testing
 * Click on the sorting hat to navigate to a random house page.
