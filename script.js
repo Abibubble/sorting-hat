@@ -5,6 +5,7 @@ let gryffindorPage = document.getElementById("js-gryffindor");
 let hufflepuffPage = document.getElementById("js-hufflepuff");
 let ravenclawPage = document.getElementById("js-ravenclaw");
 let slytherinPage = document.getElementById("js-slytherin");
+let backButton = document.getElementById("js-back-button");
 
 // ----------------------------------------------------------------------------------------------- Sorting hat sort function
 
