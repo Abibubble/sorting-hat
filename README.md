@@ -509,35 +509,24 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ## Credits
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* [CSS Tricks](https://css-tricks.com/html5-progress-element/): The base code for the progress bar during the quiz.
-* [This article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089): Help with fixing bug #9.
 
 ### Audio
-* [No Copyright Sound](https://www.youtube.com/watch?v=QDgnFDiyXEk): The dramatic music for during the quiz.
-* [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
-* 'I solemnly swear' audio was spoken by Conor Nye, recorded and edited by Abi Harrison.
+* There is no audio in this site.
 
 ### Content
-* Introduction quote is from the Harry Potter novels.
 * All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg).
-* [Colour picker](https://imagecolorpicker.com/en/).
-* [Galleons image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415385922).jpg).
-* [Letters image](https://pixabay.com/da/photos/harry-potter-hogwarts-accept-brev-4455031/).
-* [Remembrall image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(Remembrall).jpg).
-* [Ticket image](https://commons.wikimedia.org/wiki/File:The_Making_of_Harry_Potter_29-05-2012_(7415391168).jpg).
+* https://www.pinterest.co.uk/pin/716142778224412690/ for sorting hat image by Fábio Baganha.
+* FIND LINK FOR HOUSE CREST IMAGES
 
 ### Media
 * All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
 * All characters, quotes, and themes belong to J.K. Rowling & Warner Bros Entertainment Inc.
 * All images used were copyright free images, with credit given in Content above.
-* https://www.pinterest.co.uk/pin/716142778224412690/ for sorting hat image by Fábio Baganha.
-* FIND LINK FOR HOUSE CREST IMAGES
 
 ### Acknowledgements
-* My mentor, Antonio Rodriguez, at [Code Institute](https://codeinstitute.net/), for continuous helpful feedback and support.
 * Eve Crabb, for her support through my learning, and for being a sounding board for bug fixes.
 * Tom Crabb, for his advice on how to make my code cleaner.
 * The team at [Code Institute](https://codeinstitute.net/), for teaching me the necessary skills to create this site.
