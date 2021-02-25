@@ -1,17 +1,16 @@
-# Title
+# Harry Potter Sorting Hat
 
-![GitHub contributors](https://img.shields.io/github/contributors/abibubble/REPO)
-![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/REPO)
-![GitHub language count](https://img.shields.io/github/languages/count/abibubble/REPO)
-![GitHub top language](https://img.shields.io/github/languages/top/abibubble/REPO)
+![GitHub contributors](https://img.shields.io/github/contributors/abibubble/sorting-hat)
+![GitHub last commit](https://img.shields.io/github/last-commit/abibubble/sorting-hat)
+![GitHub language count](https://img.shields.io/github/languages/count/abibubble/sorting-hat)
+![GitHub top language](https://img.shields.io/github/languages/top/abibubble/sorting-hat)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
-![GitHub forks](https://img.shields.io/github/forks/abibubble/REPO?style=social)
+![GitHub forks](https://img.shields.io/github/forks/abibubble/sorting-hat?style=social)
 
-[Here is a link to the final project](https://abibubble.github.io/REPO)
+[Here is a link to the final project](https://abibubble.github.io/sorting-hat)
 
-BASIC DESCRIPTION OF PROJECT
-It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
-WHY DID I CHOOSE THIS PROJECT
+This is a simple randomiser that is Harry Potter themed. It was built for a Harry Potter-themed virtual sleepover for my Guide unit during Covid-19 lockdown restrictions.
+It is not fully responsive, as it only needed to be accessible on a laptop screen, for screen sharing via Zoom.
 
 ![Final project image home page](assets/images/docs/finalpage.png)
 
