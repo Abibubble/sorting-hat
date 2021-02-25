@@ -26,7 +26,6 @@ It is not fully responsive, as it only needed to be accessible on a laptop scree
     * [Imagery](#imagery)
     * [Wireframes](#wireframes)
     * [Features](#features)
-    * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -94,34 +93,21 @@ The main features that I wanted to include are:
 These colors are taken via a color picker tool, directly from the Harry Potter official logo, and from the official Hogwarts crest.
 
 ### Typography
-* For the opening page, I used the font monospace, as it's got quite a bit of character, and it links with the feeling of entering into something. It's also very similar to a typewriter font, which matches the theme of novels quite nicely.
 * I used sans-serif throughout the quiz. It's a clean and easy to read font, whilst also being bold and eye catching. 
-* Both of these fonts also don't distract the user from the main theme, and have the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
+* This font doesn't distract the user from the main theme, and has the added bonus that they're staple fonts with HTML, so all browsers will be able to display them.
 
 ### Imagery
-* The opening quote page is a direct line from the books, which immediately captures the attention of the user, sets the theme for the quiz, and encourages immersion as soon as they enter the site.
 * The large background hero image is designed to be striking and catch the user's attention, making it clear at first glance what the quiz is related to. 
 * It directly correlates to the aesthetic of the Harry Potter series, using an image of Gloucester cloisters, which was used in the filming of the Harry Potter films.
+* The logo used as a header is the official Harry Potter logo.
+* The hat image is an artist's cartoon-style version of the sorting hat in the Harry Potter books and movies.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
 
 ### Features
-* Interactive quiz elements, including:
-    * A score counter for correct answers.
-    * A progress bar so that the user can see how far through the quiz they are.
-    * Choose your house, the questions correlate to which house is chosen.
-    * Background audio that can be toggled on and off.
-    * A timer that ends the quiz if the time runs out.
-* Responsive on all devices.
+* A randomised house appears when you click the sorting hat.
 
-### Audio
-* In the Harry Potter universe, a witch or wizard has to utter the phrase 'I solemnly swear that I am up to no good' for the Marauders Map to reveal the map.
-* Because of this, I've got the phrase displayed, the user has the choice to turn the audio on via the button in the banner at the top. It's also goldenrod to link with the color scheme.
-* Once the user clicks to enter the quiz, if the audio is on, the audio will play, as if they're speaking the phrase to reveal the quiz.
-* On the Home page, once the audio is turned on, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
-* Once the quiz starts, if the audio is turned on, a Harry Potter-style theme is played as background music, adding to the experience and the intensity of the quiz.
-* When the user gets to the results page, the crackling fire sound returns if the audio is turned on, bringing it full circle so that there is no dramatic stop in the audio.
 ---
 
 ## Technologies Used
@@ -139,22 +125,16 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 GitHub is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
 Balsamiq was used to create the wireframes during the design process.
-#### Responsinator:
-[Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
 Google DevTools was used to help me find what code correlated to what feature.
-#### Am I Responsive Design:
-[Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
-#### Audacity:
-Audacity was used to record the 'I solemnly swear' audio, and to edit it to sound more within the theme. It was also used to reduce the volume on the other two audio tracks.
 
 ## Deployment
 ### Initial Deployment
 This site was deployed to GitHub Pages by following these steps:
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Create a new repository named "milestone2-harry-potter-quiz".
+2. Create a new repository named "sorting-hat".
 3. Once created, click on "Settings" on the navigation bar under the repository title.
 4. Scroll down to "GitHub Pages".
 5. Under "Source", choose which branch to deploy. I chose "master", but this is sometimes shown as "main".
@@ -164,12 +144,12 @@ This site was deployed to GitHub Pages by following these steps:
 
 ### How to Fork it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. On GitHub, go to [Abibubble/milestone2-harry-potter-quiz](https://github.com/Abibubble/milestone2-harry-potter-quiz).
+2. On GitHub, go to [Abibubble/sorting-hat](https://github.com/Abibubble/sorting-hat).
 3. In the top right, click "Fork".
 
 ### How to Clone it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Fork the repository Abibubble/milestone2-harry-potter-quiz using the steps above in [How to Fork it](#how-to-fork-it).
+2. Fork the repository Abibubble/sorting-hat using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -178,7 +158,7 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/Abibubble/milestone2-harry-potter-quiz) for this quiz.
+1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/Abibubble/sorting-hat) for this quiz.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
@@ -196,10 +176,10 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 The only errors found were due to 'let', 'const' and template literals only being available in ES6 within the JavaScript code.
 
 1. W3C Markup Validator
-    * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fmilestone2-harry-potter-quiz%2F)
+    * [HTML Results](LINK)
 
 2. W3C CSS Validator
-    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fmilestone2-harry-potter-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * [CSS Results](LINK)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
@@ -314,6 +294,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 ### Content
 * All other text content written by the developer, Abi Harrison.
 * All other code was written by the developer, Abi Harrison.
+* [Colour picker](https://imagecolorpicker.com/en/).
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg).
 * https://www.pinterest.co.uk/pin/716142778224412690/ for sorting hat image by Fábio Baganha.
