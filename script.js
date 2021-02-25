@@ -15,18 +15,22 @@ function sortHouse() {
         case 1:
             sortPage.classList.add("hide");
             gryffindorPage.classList.remove("hide");
+            backButton.classList.remove("hide");
             break;
         case 2:
             sortPage.classList.add("hide");
             hufflepuffPage.classList.remove("hide");
+            backButton.classList.remove("hide");
             break;
         case 3:
             sortPage.classList.add("hide");
             ravenclawPage.classList.remove("hide");
+            backButton.classList.remove("hide");
             break;
         case 4:
             sortPage.classList.add("hide");
             slytherinPage.classList.remove("hide");
+            backButton.classList.remove("hide");
             break;
         default:
             alert("Hmm... I can't make up my mind... Let's try that again!")
