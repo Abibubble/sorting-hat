@@ -275,54 +275,27 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * On the Home page, there are simple instructions for the user to choose their house, with brightly colored buttons to match the house colors.
 * Within the quiz, the question and answers are bright and eye-catching, making it obvious what to do.
 
-![Image of the home page to show the buttons](assets/images/docs/testing/homepage.png)
-
-##### The user must be able to give up on the quiz if they wish to, and return to the homepage.
-* On every page, there is a button to take the user to Home or to Instructions, which resets their house, score, and timer back to default.
-
-![Image of the buttons on every page](assets/images/docs/testing/buttons.png)
+##### The user must be able to return to the homepage from the house page.
+* On every house page, there is a button to take the user to the home page.
 
 #### First Time Visitor Goals
 ##### I want it to be easy to understand what to do.
-* There is a clear Instructions page, that details exactly how the quiz works.
-* This is easily accessible from every page.
-* The instructions on the main pages themselves are clear to read and easy to understand.
-* Every page is fully visible on a browser window, nothing requires scrolling down to view it, other than when the user is in landscape orientation on a mobile or tablet.
-
-![Image of the instructions](assets/images/docs/testing/instructionspage.png)
+* All instructions are clear and easy to understand.
+* All navigation buttons are easy to see and easy to understand what they do.
 
 ##### I want to be able to easily navigate throughout the site.
-* On every page, there is a button to take the user to Home, Instructions, or to toggle the audio on or off.
-* All other buttons and links are clearly defined and easy to see.
-
-![Image of the audio button](assets/images/docs/testing/audioon.png)
-
-##### I want to be able to turn the audio on or off at any point in the quiz.
-* On the solemnly page, there is a banner at the top allowing them to turn the audio on, and the image on the button changes depending on if the audio is on or off.
-* There is an audio button in the top right of every other page, in which the text changes depending on if the audio is on or off.
-* If the audio is off (as default), the button says 'Audio on' with a volume up icon.
-* If the audio is on, the button says 'Audio off' with a mute volume icon.
-
-![Image of the solemnly page](assets/images/docs/testing/solemnlypage.png)
+* All instructions are clear and easy to understand.
+* All navigation buttons are easy to see and easy to understand what they do.
 
 #### Returning Visitor Goals
-##### I want to have different questions depending on which house I choose, increasing replayability.
-* There are 10 questions available for each of the 4 houses, giving a question pool of 40 possible questions.
-* The question set is fully randomised, without allowing questions to be repeated. This allows the user to replay any house without having the same experience.
-* The user can choose any house they like, and the quiz takes you back to the Home page once you've completed the quiz. This allows for easy choosing of a new house.
-
-![Image of a random quiz question](assets/images/docs/testing/quizpage.png)
-
-#### Frequent Visitor Goals
-##### I want to be able to play the quiz again with new questions.
-* The code is designed so that questions can be changed at any time in the questions variable.
-* The code is designed so that additional questions can be added at any time into the questions variable.
-* The progress bar and score will then update to the new total amount of questions, and remain functional.
-
-![Image of the progress bar and timer](assets/images/docs/testing/progressandtimer.png)
+##### 
+* 
 
 ### Full Testing
-[Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
+* Click on the sorting hat to navigate to a random house page.
+* Click the back button to return to the original page.
+* Ensure that every house page is available. This was done by repeatedly clicking the sorting hat.
+* Ensure that the house pages are shown at random.
 
 #### Desktop / Laptop
 1. Google Chrome
