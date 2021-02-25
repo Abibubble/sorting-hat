@@ -332,32 +332,13 @@ The only errors found were due to 'let', 'const' and template literals only bein
     * All tested and working correctly.
 
 3. Mozilla Firefox
-    * Progress bar backing cannot be styled, so it's white instead of goldenrod.
-    * Everything else tested and working correctly.
+    * All tested and working correctly.
 
 4. Internet Explorer
-    * Internet Explorer doesn't support the click to enter, so is not accessible on this browser.
-    * However, Internet Explorer has been replaced by Microsoft Edge, which fully supports this site.
+    * All tested and working correctly.
 
 5. Safari
-    * The overlay on the score and the timer on the quiz page is shrunken, so it doesn't fully cover the text.
-    * This appears to be only with the MacBook Air, when using responsive screen sizes and other devices with the same screen size, there is no problem.
-    * Everything else tested and working correctly.
-
-#### Tablet
-1. Safari
     * All tested and working correctly.
-
-#### Mobile
-1. Google Chrome
-    * All tested and working correctly.
-
-2. Safari
-    * All tested and working correctly.
-
-3. Samsung Internet
-    * On dark mode, all of the colors invert, as shown in [my testing file](testing.md).
-    * Everything else tested and working correctly.
 
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
