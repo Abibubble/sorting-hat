@@ -366,26 +366,19 @@ The website was viewed on a variety of devices, including:
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
 * MacBookAir7,2 (13-inch, 2017)
-* iPad 6,11 5th generation, running iOS 10.3
-* Amazon Fire tablet 7
-* iPhone 7
-* iPhone X
-* iPhone 12
-* OPPO Find X2 Lite
-* Samsung Galaxy A70
-* Samsung Galaxy S9
-* Samsung Galaxy S10+
-* Samsung A20
-* xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. 
+1. The sortHouse() function was returning numbers 0 - 3, instead of 1 - 4.
+    * I checked the function of Math.random() and Math.floor(), and realised it rounds the number down.
+    * I fixed this by adding 1 to the number at the end.
+    * I am aware that I can use Math.ceil() instead, and will correct this when I have more time.
 
 ### Known Bugs
 * This site is not responsive for mobile or tablet devices. This was simple done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
+* The code needs shortening in the sortHouse() function as mentioned in solved bugs #1.
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
