@@ -382,117 +382,25 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. The setHouse function wasn't acting on the second page, so it didn't change the color scheme as it should.
-    * I searched Google and Stack Overflow and tested out a few fixes that I saw suggested there, but none of them worked.
-    * I used console.log on all of my variables after they were created, and discovered that 'this' wasn't being targeted properly.
-    * The houseChosen variable was collecting the correct id, and the answers variable was collecting an HTML collection instead of the answers.
-    * I searched on Stack Overflow, and saw that as I was using multiple scripts and multiple html documents, I'd need to use a GET or POST request to access the data fully.
-    * This added more complications than was necessary, making my code longer than required, so I changed the set up of my documents.
-    * I added all scripts into one script, with different sections clearly defined.
-    * I added all HTML pages into one page, using a hide/show function to access whichever part of the page needs to be visible to the user.
-    * I was then able to simplify my setHouse function, which fixed this bug, and improved the performance of my site.
-
-2. The houseChosen variable contained a string, so when I was trying to use it to cycle through an array of objects, it was just bringing up each index of that string (a single letter).
-    * I searched Google and Stack Overflow, and found eval(), which fixed my problem.
-    * Upon more research, I found that eval() should not be used due to extreme security risks.
-    * I looked into using Function(), but that didn't fix my problem either.
-    * I spoke to Eve Crabb and Tom Crabb (friends of mine who are developers), who suggested that I'd be better off having my questions in one 'questions' object.
-    * Then I put each set of questions in their own object, and each question and answer set in an array within that object.
-    * This meant I could then refer to the object depending on which house was chosen much simpler.
-    * I then used a seperate function to refer to a specific question within the question set, which solved my problem.
-
-3. The randomiseQuestionOrder() function wasn't accessing the question and answer content as it should have been.
-    * Originally, I had my randomiseQuestionOrder() set up to find a number between 0 and 9 using Math.floor(), to then use with indexing to find a question.
-    * However, due to bug #2, this didn't function was I intended.
-    * I then changed it to Math.ceil(), to find a random number between 1 and 10.
-    * Using this number, I concatenated the letter Q in front of the number, and set that to the variable of currentQuestion.
-    * This meant I could refer to the question by the [0 ] of each question set.
-    * This meant that referring to the question, the answers, and the correct answer became much simpler.
-    * I could then use indexing to use whichever part I needed to, which fixed this bug.
-
-4. After answering a question, the completed question wasn't being removed from the question pool, so it was being repeated.
-    * Originally I had my questions organised as a arrays nested inside an object. I reached out to the Slack community, and received advice that this was a complicated method.
-    * I changed my questions to be a nested array inside an array, which made my referencing each question much simpler, requiring less code.
-    * However, when I needed to delete the currentQuestion from the current questionsSet, it wasn't being deleted.
-    * I tried delete questionsSet.currentQuestion and delete questionsSet[currentQuestion ], but neither worked.
-    * Changed my questions into a nested array, but neither of the above worked still.
-    * I also tried using .splice(), which also didn't work. It was just removing index 1, rather than getting the index number from the currentQuestion variable.
-    * I did a bit more research into .splice(), and got it removing the final index of the questionsSet.
-    * Finally, I realised I was using currentQuestion.indexOf(); instead of questionsSet.indexOf(currentQuestion).
-    * I corrected my reference to the correct index, which solved this bug.
-
-5. The quiz wouldn't let you get to 10 answered questions, it refused to count higher than 9, meaning the only way to end the quiz is to let the timer run out.
-    * As I had just changed the endTimer() function, I double checked my code for that.
-    * I changed the condition to questionsAnswered <= 10, but that caused it to stop at 8.
-    * I checked my code again, and added an else statement that I'd forgotten, for if the answer isn't correct.
-    * I also moved the endTimer() and endQuiz() functions above the checkAnswer() function, because they're used inside it, which fixed this bug.
-
-6. Once the user has completed the quiz and got to the results page, the timer kept going, giving an alert after 120 seconds, even if the user had completed the quiz.
-    * I added an if (counter = "") statement to end the timer function if counter was updated to "", which it is in the endQuiz() function.
-    * This didn't fix the issue, at which point I realised it was likely to be linked to bug #7.
-    * I did more reading into how setInterval and clearInterval works, and refactored my code, making my code shorter and easier to read.
-    * I'd been using clearInterval with my function name in the brackets, which I learned was incorrect.
-    * I replaced the function name with the variable name to fix this bug.
-
-7. Timer isn't stopping when you click the navigation links.
-    * I tried to update counter to blank in the navigation functions, but that caused it to bring up the score page as well as home page.
-    * To correct that, I added code to add the hide class to all pages as the quiz ends.
-    * Whilst researching to fix bug #6, I learned how to use clearInterval() properly.
-    * I added the correct use of clearInterval() into my navigation click functions, which fixed this bug.
-
-8. The progress bar wasn't updating after each question was answered.
-    * I checked my code, and realised I'd used .innerHTML instead of .value, which was what I needed to update.
-    * I was still getting an error that getElementById wasn't defined.
-    * On a second read through, I realised I'd forgotten to include 'document.' at the start.
-    * I updated this, which fixed my bug.
-
-9. TypeError: Cannot read property '0' of undefined at script.js.193 after finishing the quiz once.
-    * It's not re-setting the questionsSet for some reason.
-    * I tried setting questionsSet to 0 in the startQuiz function, but no luck.
-    * currentQuestion is returning undefined when going through the quiz the second time around.
-    * Changing the house doesn't stop the bug, so it's not house-specific, and not linked to choosing the same house twice in a row.
-    * The const questions was being changed when questionsSet was changed, because it's got nested arrays in it.
-    * I checked on StackOverflow, and on Google and found [this article on Medium](https://medium.com/javascript-in-plain-english/how-to-deep-copy-objects-and-arrays-in-javascript-7c911359b089).
-    * I checked every step it suggests, and none of the shallow copy methods worked.
-    * I continued into the deep copy methods, and as I wanted to avoid importing things from external sources, I didn't use Lodash or Ramda.
-    * I did a deep copy of it using JSON.parse(JSON.stringify(questions));, which fixed the bug.
-
-10. Upon refactoring my code, the quiz wasn't getting to question 6.
-    * I used console.log to see what was happening at what time, and realised that questionsSet.length was changing each time a question was answered.
-    * I wanted it to stay at the original questionsSet length, so that if more questions are added in the future, it can update automatically.
-    * I created a questionsSetLength variable, which got the length of the chosen questionsSet when it was created.
-    * I then used this as my variable, instead of questionsSet.length, which fixed this bug.
+1. 
 
 ### Known Bugs
-* This quiz is not supported on Internet Explorer. However, IE has been declared outdated by Microsoft's head of cyber-security, and is recommended not to be used as a main browser.
-* On Safari on MacBook Air, the overlay for the score and timer on the quiz page aren't big enough to cover the text. This is not an issue on other devices using the same screen size.
-
-![MacBook Air overlay bug](assets/images/docs/macoverlayscore.png)
-![MacBook Air overlay bug](assets/images/docs/macoverlaytimer.png)
-
-* On Samsung Internet, their version of dark mode just inverts all the colors, including the color scheme of the entire quiz, as shown in [my testing file](testing.md).
-* On Mozilla Firefox, the progress bar backing cannot be styled, so it's white instead of goldenrod.
-
-![Mozilla Firefox progress bar bug](assets/images/docs/firefoxprogress.png)
+* This site is not responsive for mobile or tablet devices. This was simple done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/images/docs/lighthouse.png)
-
-#### Mobile
-![Lighthouse mobile first try](assets/images/docs/lighthousemobile.png)
+![Lighthouse desktop first try](assets/images/lighthouse.png)
 
 #### Performance:
 * I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
 * I was very happy with my initial lighthouse score, as the only thing reducing my Performance is that I have quite a few images, including an image being used as the background on all pages.
-* My mobile score is lower because the images are scaled down for use on mobile, rather than importing a new image, so it's reducing the Performance due to resizing.
 
 #### Accessibility:
 * I was very careful when writing my code to ensure it was fully accessible.
 * I used semantic code wherever possible to help any users that use screen readers.
-* Every image has relevant alt text, including the images that are populated depending on the result. Each image is populated with relevant alt text.
+* Every image has relevant alt text, including the images that are populated depending on the result.
 * All text has good visibility on whichever background it's on, so it shouldn't cause issues for any color blind users.
 * I also checked this site with a friend who has Deuteranopia color blindness, and he had no issues with the site.
 
