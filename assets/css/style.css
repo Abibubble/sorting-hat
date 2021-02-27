@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    color: lightgray;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------- Background Image */
+
+.background-image {
+    width: 100%;
+    height: auto;
+    background: url("https://i.imgur.com/GmbJoQx.jpg") no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    border: 0;
+}
+
+#logo {
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: rgba(218,165,32,0.5);
+    border-radius: 25px;
+    padding: 25px;
+    width: 34%;
+    margin-left: 33%;
+    text-align: center;
+}
+
+#sorting-hat {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.house-text {
+    margin: 0;
+    font-size: 150%;
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+    background-color: rgba(218,165,32,0.8);
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.crest {
+    width: 18%;
+    margin-left: 41%;
+}
+
+/* Back button needed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+footer {
+    background-color: rgba(255,255,255,0.4);
+    padding: 3px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+    color: black;
+}
+
+.hide {
+    display: none;
+}
