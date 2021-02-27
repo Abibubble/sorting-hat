@@ -12,7 +12,7 @@
 This is a simple randomiser that is Harry Potter themed. It was built for a Harry Potter-themed virtual sleepover for my Guide unit during Covid-19 lockdown restrictions.
 It is not fully responsive, as it only needed to be accessible on a laptop screen, for screen sharing via Zoom.
 
-![Final project image home page](assets/images/docs/finalpage.png)
+![Final project image home page](assets/images/sortinghatpage.png)
 
 ## Contents
 
