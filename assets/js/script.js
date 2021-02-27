@@ -5,7 +5,6 @@ let gryffindorPage = document.getElementById("js-gryffindor");
 let hufflepuffPage = document.getElementById("js-hufflepuff");
 let ravenclawPage = document.getElementById("js-ravenclaw");
 let slytherinPage = document.getElementById("js-slytherin");
-let backButton = document.getElementById("js-back-button");
 
 // ----------------------------------------------------------------------------------------------- Sorting hat sort function
 
@@ -15,25 +14,29 @@ function sortHouse() {
         case 1:
             sortPage.classList.add("hide");
             gryffindorPage.classList.remove("hide");
-            backButton.classList.remove("hide");
             break;
         case 2:
             sortPage.classList.add("hide");
             hufflepuffPage.classList.remove("hide");
-            backButton.classList.remove("hide");
             break;
         case 3:
             sortPage.classList.add("hide");
             ravenclawPage.classList.remove("hide");
-            backButton.classList.remove("hide");
             break;
         case 4:
             sortPage.classList.add("hide");
             slytherinPage.classList.remove("hide");
-            backButton.classList.remove("hide");
             break;
         default:
             alert("Hmm... I can't make up my mind... Let's try that again!");
             break;
     }
+}
+
+function navigateSort() {
+    sortPage.classList.remove("hide");
+    gryffindorPage.classList.add("hide");
+    hufflepuffPage.classList.add("hide");
+    ravenclawPage.classList.add("hide");
+    slytherinPage.classList.add("hide");
 }
