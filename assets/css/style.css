@@ -50,11 +50,14 @@ body {
 }
 
 .crest {
-    width: 18%;
-    margin-left: 41%;
+    width: 16%;
+    margin-left: 42%;
 }
 
-/* Back button needed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.back-button {
+    width: auto;
+    margin-top: 1%;
+}
 
 footer {
     background-color: rgba(255,255,255,0.4);
