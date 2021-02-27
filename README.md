@@ -170,7 +170,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 The only errors found were due to 'let' only being available in ES6 within the JavaScript code.
 
 1. W3C Markup Validator
-    * [HTML Results](LINK)
+    * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fabibubble.github.io%2Fsorting-hat%2F)
 
 2. W3C CSS Validator
     * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fsorting-hat%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
