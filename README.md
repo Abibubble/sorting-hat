@@ -59,17 +59,11 @@ It is not fully responsive, as it only needed to be accessible on a laptop scree
 ---
 ## User Experience (UX)
 ### Initial Discussion
-My initial requirements for this project was to create a fun, interactive quiz that could be enjoyed by anyone.
+My initial requirements for this project was to create a simple but fun randomising sorting hat house selection site that could be enjoyed by anyone.
 My target audience is Harry Potter fans and their friends and family. Luckily, this covers a large part of the population.
 The target demographic is incredibly mixed, as Harry Potter is enjoyed by people of all ages and genders.
 
-The main features that I wanted to include are:
-* Interactive quiz elements.
-* A score counter for correct answers.
-* A progress bar so that the user can see how far through the quiz they are.
-* Choose your house, and the questions correlate to which house is chosen.
-* Audio that can be toggled on and off, which changes depending on which page you're on.
-* A timer that ends the quiz if the time runs out.
+The main feature that I wanted to include is a randomise function for the sorting hat click.
 
 ### User Stories
 #### Client Goals
@@ -83,7 +77,7 @@ The main features that I wanted to include are:
 * I want to be able to easily navigate throughout the site.
 
 #### Returning Visitor Goals
-* To be able to get a random house every time
+* To be able to get a random house every time.
 
 ---
 ## Design
@@ -173,13 +167,13 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ## Testing
 ### W3C Validator
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
-The only errors found were due to 'let', 'const' and template literals only being available in ES6 within the JavaScript code.
+The only errors found were due to 'let' only being available in ES6 within the JavaScript code.
 
 1. W3C Markup Validator
     * [HTML Results](LINK)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fabibubble.github.io%2Fsorting-hat%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
@@ -219,6 +213,8 @@ The only errors found were due to 'let', 'const' and template literals only bein
 * Click the back button to return to the original page.
 * Ensure that every house page is available. This was done by repeatedly clicking the sorting hat.
 * Ensure that the house pages are shown at random.
+* Ensure that back and forward browser buttons don't interfere with the site.
+* Ensure that all buttons are click-able.
 
 #### Desktop / Laptop
 1. Google Chrome
