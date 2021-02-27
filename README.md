@@ -261,7 +261,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### Performance:
 * I decided to use vanilla CSS and JavaScript, rather than utilising Bootstrap or jQuery due to the performance trade-offs caused by those libraries.
-* I was very happy with my initial lighthouse score, as the only thing reducing my Performance is that I have quite a few images, including an image being used as the background on all pages.
+* I was very happy with my initial lighthouse score, as the only thing reducing my Performance is that I have quite a few images, including a large image being used as the background on all pages.
 
 #### Accessibility:
 * I was very careful when writing my code to ensure it was fully accessible.
@@ -273,11 +273,11 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 #### Best Practices:
 * As I avoided code libraries, I also avoided any security vulerabilities associated with those libraries.
 * Images are shown with the correct aspect ratio, as all resizing is done with percentage values instead of pixel values.
-* As the site is a quiz, it also doesn't ask for any geolocation or notification permissions.
+* As the site is a simple randomiser, it also doesn't ask for any geolocation or notification permissions.
 
 #### SEO:
 * I ensured the site has a relevant meta description and a relevant title.
-* All font sizes are legible on all screen sizes, and all tap targets are well sized.
+* All font sizes are legible on desktop, and all tap targets are well sized.
 
 ---
 ## Credits
@@ -285,7 +285,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 
 ### Audio
-* There is no audio in this site.
+* There is no audio on this site.
 
 ### Content
 * All other text content written by the developer, Abi Harrison.
@@ -294,7 +294,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg).
 * https://www.pinterest.co.uk/pin/716142778224412690/ for sorting hat image by Fábio Baganha.
-* FIND LINK FOR HOUSE CREST IMAGES
+* All house crest images were found on [Starstills](https://www.starstills.com/).
 
 ### Media
 * All media belongs to J.K. Rowling & Warner Bros Entertainment Inc.
