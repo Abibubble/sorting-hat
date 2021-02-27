@@ -33,7 +33,7 @@ function sortHouse() {
             backButton.classList.remove("hide");
             break;
         default:
-            alert("Hmm... I can't make up my mind... Let's try that again!")
+            alert("Hmm... I can't make up my mind... Let's try that again!");
             break;
     }
 }
