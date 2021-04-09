@@ -45,3 +45,21 @@ function navigateSort() {
 
 // ----------------------------------------------------------------------------------------------- Audio functions
 
+fireAudio.loop = true;
+
+function checkAudioButtons() {
+    if (music === "on") {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
+    } else {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+    }
+}
+
+function toggleMusic() { // So that the user can toggle the music off or on
+    if (music === "off") {
+        music = "on";
+    } else {
+        music = "off";
+    }
+    checkAudioButtons();
+}
