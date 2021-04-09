@@ -47,6 +47,14 @@ function navigateSort() {
 
 fireAudio.loop = true;
 
+function whichMusic() {
+    if (music === "on") {
+        fireAudio.play();
+    } else {
+        fireAudio.pause();
+    }
+}
+
 function checkAudioButtons() {
     if (music === "on") {
         document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
@@ -62,4 +70,5 @@ function toggleMusic() { // So that the user can toggle the music off or on
         music = "off";
     }
     checkAudioButtons();
+    whichMusic();
 }
