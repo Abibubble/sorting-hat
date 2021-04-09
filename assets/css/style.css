@@ -64,6 +64,7 @@ h1 {
 .back-button {
     width: auto;
     margin-top: 1%;
+    text-shadow: 1px 1px 1px black;
 }
 
 footer {
