@@ -5,6 +5,8 @@ let gryffindorPage = document.getElementById("js-gryffindor");
 let hufflepuffPage = document.getElementById("js-hufflepuff");
 let ravenclawPage = document.getElementById("js-ravenclaw");
 let slytherinPage = document.getElementById("js-slytherin");
+let music = "off";
+const fireAudio = new Audio('assets/audio/fire-sound.mp3');
 
 // ----------------------------------------------------------------------------------------------- Sorting hat sort function
 
@@ -40,3 +42,6 @@ function navigateSort() {
     ravenclawPage.classList.add("hide");
     slytherinPage.classList.add("hide");
 }
+
+// ----------------------------------------------------------------------------------------------- Audio functions
+
