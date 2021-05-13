@@ -180,31 +180,27 @@ footer p {
 /* Laptop or Large Tablet */
 @media screen and (min-width: 992px) {
     .logo {
-        margin: 0 auto;
         margin-top: 1%;
-        background-color: rgba(218,165,32,0.5);
-        border-radius: 25px;
-        padding: 25px;
-        width: 34%;
-        margin-left: 33%;
-        text-align: center;
+        width: 30%;
+        margin-left: 35%;
+        padding: 20px;
     }
     
     .sorting-hat {
+        margin-top: 2%;
+        margin-bottom: 2%;
         width: 30%;
         margin-left: 35%;
     }
     
     .house-text {
-        margin: 0;
         font-size: 150%;
-        text-shadow: 3px 3px 4px #000;
-        text-align: center;
-        background-color: rgba(218,165,32,0.8);
-        border-radius: 25px;
-        width: 70%;
         margin-left: 15%;
-        text-align: center;
+    }
+
+    .crest {
+        width: 18%;
+        margin-left: 42%;
     }
 
     .crest-text {
@@ -212,8 +208,9 @@ footer p {
     }
 
     .back-button {
-        margin-top: 2%;
+        margin-top: 0.3%;
         width: 72%;
-        margin-bottom: 7%;
+        margin-bottom: 3%;
+        padding: 3px;
     }
 }
