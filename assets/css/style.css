@@ -1,17 +1,10 @@
-/* ------------------------------------------------------------------------------------------- CSS Resets */
-
 body {
     font-family: sans-serif;
-    color: lightgray;
+    color: #D3D3D3;
     margin: 0;
     width: 100%;
     height: 100%;
     font-size: 25px;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
 }
 
 /* ------------------------------------------------------------------------------------------- Background Image */
@@ -28,26 +21,34 @@ h1 {
     border: 0;
 }
 
+/* ------------------------------------------------------------------------------------------- Main page */
+
 #logo {
     margin: 0 auto;
-    margin-top: 1%;
+    margin-top: 5%;
     background-color: rgba(218,165,32,0.5);
     border-radius: 25px;
     padding: 25px;
-    width: 34%;
-    margin-left: 33%;
+    width: 75%;
+    margin-left: 5%;
     text-align: center;
 }
 
 #sorting-hat {
-    width: 30%;
-    margin-left: 35%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.button {
+    border-radius: 10%;
+    position: fixed;
+    right: 10px;
 }
 
 .house-text {
     margin: 0;
-    font-size: 150%;
-    text-shadow: 3px 3px 4px black;
+    font-size: 100%;
+    text-shadow: 3px 3px 4px #000;
     text-align: center;
     background-color: rgba(218,165,32,0.8);
     border-radius: 25px;
@@ -56,32 +57,92 @@ h1 {
     text-align: center;
 }
 
+/* ------------------------------------------------------------------------------------------- House page */
+
 .crest {
-    width: 16%;
-    margin-left: 42%;
+    width: 18%;
+    margin-left: 41%;
 }
 
-.back-button {
-    width: auto;
-    margin-top: 1%;
-    text-shadow: 1px 1px 1px black;
-}
+/* ------------------------------------------------------------------------------------------- Footer */
 
 footer {
     background-color: rgba(255,255,255,0.4);
-    padding: 3px;
+    padding: 10px;
     border-radius: 5px;
     position: fixed;
     bottom: 0;
-    left: 10px;
+    width: 100%;
 }
 
 footer p {
     font-size: 14px;
     margin: 0;
-    color: black;
+    color: #000;
 }
 
 .hide {
     display: none;
+}
+
+/* ------------------------------------------------------------------------------------------- Media queries */
+
+/* Portrait Tablet */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+}
+
+/* Laptop or Large Tablet */
+@media screen and (min-width: 992px) {
+    #logo {
+        margin: 0 auto;
+        margin-top: 1%;
+        background-color: rgba(218,165,32,0.5);
+        border-radius: 25px;
+        padding: 25px;
+        width: 34%;
+        margin-left: 33%;
+        text-align: center;
+    }
+    
+    #sorting-hat {
+        width: 30%;
+        margin-left: 35%;
+    }
+    
+    .house-text {
+        margin: 0;
+        font-size: 150%;
+        text-shadow: 3px 3px 4px #000;
+        text-align: center;
+        background-color: rgba(218,165,32,0.8);
+        border-radius: 25px;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+
+    .button {
+        position: relative;
+    }
+
+    footer {
+        background-color: rgba(255,255,255,0.4);
+        padding: 3px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 0;
+        left: 10px;
+    }
+    
+    footer p {
+        font-size: 14px;
+        margin: 0;
+        color: #000;
+    }
 }
