@@ -28,7 +28,7 @@ h1 {
 
 /* ------------------------------------------------------------------------------------------- Main page */
 
-#logo {
+.logo {
     margin: 0 auto;
     margin-top: 5%;
     background-color: rgba(218,165,32,0.5);
@@ -39,7 +39,7 @@ h1 {
     text-align: center;
 }
 
-#sorting-hat {
+.sorting-hat {
     width: 70%;
     margin-left: 13%;
     margin-top: 5%;
@@ -107,7 +107,7 @@ footer p {
 
 /* Landscape Mobile */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    #logo {
+    .logo {
         margin: 0 auto;
         margin-top: 1%;
         background-color: rgba(218,165,32,0.5);
@@ -118,7 +118,7 @@ footer p {
         text-align: center;
     }
     
-    #sorting-hat {
+    .sorting-hat {
         width: 30%;
         margin: 0;
         margin-left: 35%;
@@ -169,7 +169,7 @@ footer p {
 
 /* Portrait Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
-    #logo {
+    .logo {
         margin-left: 9%;
     }
     .crest-text {
@@ -184,7 +184,7 @@ footer p {
 
 /* Laptop or Large Tablet */
 @media screen and (min-width: 992px) {
-    #logo {
+    .logo {
         margin: 0 auto;
         margin-top: 1%;
         background-color: rgba(218,165,32,0.5);
@@ -195,7 +195,7 @@ footer p {
         text-align: center;
     }
     
-    #sorting-hat {
+    .sorting-hat {
         width: 30%;
         margin-left: 35%;
     }
