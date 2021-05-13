@@ -247,11 +247,10 @@ Friends, family members, and other developers were asked to review the site and 
 1. The sortHouse() function was returning numbers 0 - 3, instead of 1 - 4.
     * I checked the function of Math.random() and Math.floor(), and realised it rounds the number down.
     * I fixed this by adding 1 to the number at the end.
-    * I am aware that I can use Math.ceil() instead, and will correct this when I have more time.
+    * Then when I had more time, I edited this to Math.ceil() and removed the +1 to shorten my code.
 
 ### Known Bugs
 * This site is not responsive for mobile or tablet devices. This was simply done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
-* The code needs shortening in the sortHouse() function as mentioned in solved bugs #1.
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:

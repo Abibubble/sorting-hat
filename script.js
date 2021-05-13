@@ -10,7 +10,7 @@ let backButton = document.getElementById("js-back-button");
 // ----------------------------------------------------------------------------------------------- Sorting hat sort function
 
 function sortHouse() {
-    let randomNumber = Math.floor(Math.random() * 4) + 1; // Gets a random number between 1 and 4
+    let randomNumber = Math.ceil(Math.random() * 4); // Gets a random number between 1 and 4
     switch (randomNumber) {
         case 1:
             sortPage.classList.add("hide");
