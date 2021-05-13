@@ -9,10 +9,9 @@
 
 [Here is a link to the final project](https://abibubble.github.io/sorting-hat)
 
-This is a simple randomiser that is Harry Potter themed. It was built for a Harry Potter-themed virtual sleepover for my Guide unit during Covid-19 lockdown restrictions.
-It is not fully responsive, as it only needed to be accessible on a laptop screen, for screen sharing via Zoom.
+This is a simple randomiser that is Harry Potter themed, which is fully responsive on a wide range of devices. It was built for a Harry Potter-themed virtual sleepover for my Guide unit during Covid-19 lockdown restrictions.
 
-![Final project image home page](assets/images/sortinghatpage.png)
+![Final project image home page](assets/images/shpage.png)
 
 ## Contents
 
@@ -62,7 +61,6 @@ It is not fully responsive, as it only needed to be accessible on a laptop scree
 My initial requirements for this project was to create a simple but fun randomising sorting hat house selection site that could be enjoyed by anyone.
 My target audience is Harry Potter fans and their friends and family. Luckily, this covers a large part of the population.
 The target demographic is incredibly mixed, as Harry Potter is enjoyed by people of all ages and genders.
-
 The main feature that I wanted to include is a randomise function for the sorting hat click.
 
 ### User Stories
@@ -101,6 +99,7 @@ These colors are taken via a color picker tool, directly from the Harry Potter o
 
 ### Features
 * A randomised house appears when you click the sorting hat.
+* Audio is available to switch on or off at any point, to add atmosphere.
 
 ### Audio
 * On any page, once the audio is turned on, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
@@ -304,8 +303,8 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
 
 ### Content
-* All other text content written by the developer, Abi Harrison.
-* All other code was written by the developer, Abi Harrison.
+* All other text content written by the developer, [Abi Harrison](https://github.com/Abibubble).
+* All other code was written by the developer, [Abi Harrison](https://github.com/Abibubble).
 * [Colour picker](https://imagecolorpicker.com/en/).
 * Background photo on Homepage by Devon Cartwright-Smith from [FreeImages](https://freeimages.com/).
 * [Harry Potter logo](https://commons.wikimedia.org/wiki/File:Harry_Potter_wordmark.svg).
