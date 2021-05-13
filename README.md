@@ -250,7 +250,7 @@ Friends, family members, and other developers were asked to review the site and 
     * I am aware that I can use Math.ceil() instead, and will correct this when I have more time.
 
 ### Known Bugs
-* This site is not responsive for mobile or tablet devices. This was simple done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
+* This site is not responsive for mobile or tablet devices. This was simply done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
 * The code needs shortening in the sortHouse() function as mentioned in solved bugs #1.
 
 ### Lighthouse
