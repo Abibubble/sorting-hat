@@ -7,6 +7,11 @@ body {
     font-size: 25px;
 }
 
+h1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 /* ------------------------------------------------------------------------------------------- Background Image */
 
 .background-image {
@@ -35,8 +40,10 @@ body {
 }
 
 #sorting-hat {
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .button {
@@ -53,15 +60,25 @@ body {
     background-color: rgba(218,165,32,0.8);
     border-radius: 25px;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 12%;
     text-align: center;
+    padding: 10px;
 }
 
 /* ------------------------------------------------------------------------------------------- House page */
 
 .crest {
-    width: 18%;
-    margin-left: 41%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.back-button {
+    margin-top: 5%;
+    width: 75%;
+}
+
+.crest-text {
+    font-size: 75%;
 }
 
 /* ------------------------------------------------------------------------------------------- Footer */
@@ -86,6 +103,53 @@ footer p {
 }
 
 /* ------------------------------------------------------------------------------------------- Media queries */
+
+/* Landscape Mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    #logo {
+        margin: 0 auto;
+        margin-top: 1%;
+        background-color: rgba(218,165,32,0.5);
+        border-radius: 25px;
+        padding: 10px;
+        width: 30%;
+        margin-left: 35%;
+        text-align: center;
+    }
+    
+    #sorting-hat {
+        width: 30%;
+        margin: 0;
+        margin-left: 35%;
+    }
+    
+    .house-text {
+        margin: 0;
+        font-size: 100%;
+        text-shadow: 3px 3px 4px #000;
+        text-align: center;
+        background-color: rgba(218,165,32,0.8);
+        border-radius: 25px;
+        width: 80%;
+        margin-left: 8%;
+        text-align: center;
+        padding: 8px;
+    }
+
+    footer {
+        background-color: rgba(255,255,255,0.4);
+        padding: 3px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    footer p {
+        font-size: 14px;
+        margin: 0;
+        color: #000;
+    }
+}
 
 /* Portrait Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -125,6 +189,10 @@ footer p {
         width: 70%;
         margin-left: 15%;
         text-align: center;
+    }
+
+    .crest-text {
+        font-size: 100%;
     }
 
     .button {
