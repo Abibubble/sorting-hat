@@ -102,6 +102,10 @@ These colors are taken via a color picker tool, directly from the Harry Potter o
 ### Features
 * A randomised house appears when you click the sorting hat.
 
+### Audio
+* On any page, once the audio is turned on, a crackling fire sound can be heard, giving the atmosphere of a common room at Hogwarts.
+* The audio can be switched on or off at any time.
+
 ---
 
 ## Technologies Used
@@ -238,7 +242,20 @@ The website was viewed on a variety of devices, including:
 * Custom built desktop PC, running Windows 10
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
+* MacBook Pro (15-inch, 2017), running macOS Catalina
 * MacBookAir7,2 (13-inch, 2017)
+* iPad 6,11 5th generation, running iOS 10.3
+* Amazon Fire tablet 7
+* iPhone 7
+* iPhone X
+* iPhone 12
+* OPPO Find X2
+* OPPO Find X2 Lite
+* Samsung Galaxy A70
+* Samsung Galaxy S9
+* Samsung Galaxy S10+
+* Samsung A20
+* xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
@@ -250,7 +267,7 @@ Friends, family members, and other developers were asked to review the site and 
     * Then when I had more time, I edited this to Math.ceil() and removed the +1 to shorten my code.
 
 ### Known Bugs
-* This site is not responsive for mobile or tablet devices. This was simply done as I needed to get it completed quickly in time for the event I used it for, and will be fixed in the future.
+* None found. If you find any, please let me know via email on abi.harrison333@gmail.com.
 
 ### Lighthouse
 I tested my website using DevTools Lighthouse feature, and got these results:
@@ -276,7 +293,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 
 #### SEO:
 * I ensured the site has a relevant meta description and a relevant title.
-* All font sizes are legible on desktop, and all tap targets are well sized.
+* All font sizes are legible on all screen sizes, and all tap targets are suitably sized.
 
 ---
 ## Credits
@@ -284,7 +301,7 @@ I tested my website using DevTools Lighthouse feature, and got these results:
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 
 ### Audio
-* There is no audio on this site.
+* [Free Sounds Library](https://www.freesoundslibrary.com/fire-sound/): The fire cracking sound.
 
 ### Content
 * All other text content written by the developer, Abi Harrison.
