@@ -46,12 +46,6 @@ h1 {
     margin-bottom: 5%;
 }
 
-.button {
-    border-radius: 10%;
-    position: fixed;
-    right: 10px;
-}
-
 .house-text {
     margin: 0;
     font-size: 100%;
@@ -97,6 +91,12 @@ footer p {
     font-size: 14px;
     margin: 0;
     color: #000;
+}
+
+.audio-button {
+    border-radius: 10%;
+    position: fixed;
+    right: 10px;
 }
 
 .hide {
@@ -169,7 +169,12 @@ footer p {
 
 /* Portrait Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
-
+    #logo {
+        margin-left: 9%;
+    }
+    .crest-text {
+        font-size: 100%;
+    }
 }
 
 /* Landscape Tablet */
@@ -209,24 +214,5 @@ footer p {
 
     .crest-text {
         font-size: 100%;
-    }
-
-    .button {
-        position: relative;
-    }
-
-    footer {
-        background-color: rgba(255,255,255,0.4);
-        padding: 3px;
-        border-radius: 5px;
-        position: fixed;
-        bottom: 0;
-        left: 10px;
-    }
-    
-    footer p {
-        font-size: 14px;
-        margin: 0;
-        color: #000;
     }
 }
