@@ -172,14 +172,24 @@ footer p {
     .logo {
         margin-left: 9%;
     }
+
     .crest-text {
         font-size: 100%;
     }
 }
 
 /* Landscape Tablet */
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
+    .crest {
+        width: 20%;
+        margin-left: 40%;
+    }
 
+    .back-button {
+        margin-top: 2%;
+        width: 82%;
+        margin-bottom: 7%;
+    }
 }
 
 /* Laptop or Large Tablet */
@@ -214,5 +224,11 @@ footer p {
 
     .crest-text {
         font-size: 100%;
+    }
+
+    .back-button {
+        margin-top: 2%;
+        width: 72%;
+        margin-bottom: 7%;
     }
 }
